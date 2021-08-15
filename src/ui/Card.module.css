@@ -2,7 +2,7 @@
 
 .card{
     border-radius: 1rem!important;
-    background-color: #FFF!important;
+    background-color: #FFF;
     padding: 1rem!important;
     height: 100%!important;
 }
