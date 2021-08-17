@@ -15,7 +15,7 @@ const Today = (props) => {
   const { data } = props;
   return (
     <div className="row">
-      <div className="col-xl-4 p-3">
+      <div className="col-xl-4 col-lg-4 col-md-4 col-xs-6 col-mn-12 p-3">
         <Card>
           <p className="fs-5 cl-2 mg-b-5">UV index</p>
           <div className="text-center">
@@ -24,7 +24,7 @@ const Today = (props) => {
           </div>
         </Card>
       </div>
-      <div className="col-xl-4 p-3">
+      <div className="col-xl-4 col-lg-4 col-md-4 col-xs-6 col-mn-12 p-3">
         <Card>
           <p className="fs-5 cl-2 mg-b-5">Wind Status</p>
           <div className="text-center">
@@ -36,7 +36,7 @@ const Today = (props) => {
           </div>
         </Card>
       </div>
-      <div className="col-xl-4 p-3">
+      <div className="col-xl-4 col-lg-4 col-md-4 col-xs-6 col-mn-12 p-3">
         <Card>
           <p className="fs-5 cl-2 mg-b-5">Sunrise & Sunset</p>
           <div className="text-center">
@@ -63,7 +63,7 @@ const Today = (props) => {
           </div>
         </Card>
       </div>
-      <div className="col-xl-4 p-3">
+      <div className="col-xl-4 col-lg-4 col-md-4 col-xs-6 col-mn-12 p-3">
         <Card>
           <p className="fs-5 cl-2 mg-b-5">Humidity</p>
           <div className="text-center">
@@ -72,7 +72,7 @@ const Today = (props) => {
           </div>
         </Card>
       </div>
-      <div className="col-xl-4 p-3">
+      <div className="col-xl-4 col-lg-4 col-md-4 col-xs-6 col-mn-12 p-3">
         <Card>
           <p className="fs-5 cl-2 mg-b-5">Visibility</p>
           <div className="text-center">
@@ -81,7 +81,7 @@ const Today = (props) => {
           </div>
         </Card>
       </div>
-      <div className="col-xl-4 p-3">
+      <div className="col-xl-4 col-lg-4 col-md-4 col-xs-6 col-mn-12 p-3">
         <Card>
           <p className="fs-5 cl-2 mg-b-5">Pressure</p>
           <div className="text-center">

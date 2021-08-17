@@ -1,4 +1,4 @@
-import {AreaChart,XAxis,YAxis,CartesianGrid,Tooltip,Area} from "recharts";
+import {AreaChart,XAxis,YAxis,CartesianGrid,Tooltip,Area,ResponsiveContainer} from "recharts";
 import Card from "../ui/Card";
 
 const Hour = (props) => {
@@ -20,12 +20,11 @@ const Hour = (props) => {
   return (
     <div className="row">
       {data.hourly? (
-          <Card>
-          <AreaChart
-            width={800}
-            height={400}
+          <Card className="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-mn-12">
+            <ResponsiveContainer debounce={1} width='100%' height={300} >
+            <AreaChart
+            margin={{ top: 30, right: 10, left: 10, bottom: 10 }}
             data={d}
-            margin={{ top: 10, right: 50, left: 10, bottom: 10 }}
           >
             <defs>
               <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -56,6 +55,7 @@ const Hour = (props) => {
               fill="url(#colorPv)"
             />
           </AreaChart>
+            </ResponsiveContainer>
         </Card>
       ) : ''}
     </div>

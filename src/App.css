@@ -8,19 +8,135 @@
 }
 
 .container {
-  height: 90vh;
-  width: 1140px;
+  width: 100%;
 }
-@media (min-with: 1200px){
+.h-90-vh{
+  height: 90vh;
+}
+/* mn --- Mobile device mini */
+@media (min-width: 320px) {
+  #root{
+    height: auto;
+  }
   .container{
-    max-width: 1140px;
+    width: 100%;
+  }
+  .h-90-vh{
+    height: auto;
+  }
+  .col-mn-12{
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
-@media (min-with: 992px){
+/* xs --- Mobile device */
+@media (min-width: 576px) { 
+  #root{
+    height: auto;
+  }
+  .container{
+    width: 100%;
+  }
+  .h-90-vh{
+    height: auto;
+  }
+  .col-xs-12{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .col-xs-6{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+ }
+
+ /* md --- Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  #root{
+    height: auto;
+  }
+  .container{
+    max-width: 760;
+  }
+  .h-90-vh{
+    height: auto;
+  }
+  .col-md-3{
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-md-4{
+    flex: 0 0  auto;
+    width: 33.3333333%;
+  }
+  .col-md-12{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+ }
+
+/* lg --- Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #root{
+    height: 100vh;
+  }
   .container{
     max-width: 960px;
   }
-}
+  .h-90-vh{
+    height: auto;
+  }
+  .col-lg-3{
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-lg-4{
+    flex: 0 0 auto;
+    width: 33.333333%;
+  }
+  .col-lg-6{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-lg-9{
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .col-lg-12{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+ }
+
+/* xl --- Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .container{
+    max-width: 1140px;
+  }
+  .h-90-vh{
+    height: 90vh;
+  }
+  .col-xl-3{
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-xl-4{
+    flex: 0 0 auto;
+    width: 33.333333%;
+  }
+  .col-xl-6{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-xl-9{
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .col-xl-12{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+ }
 
 
 .row {
@@ -51,26 +167,7 @@
 .bg-blue{
   background-color: #11CAF0!important;
 }
-.col-xl-3{
-  flex: 0 0 auto;
-  width: 25%;
-}
-.col-xl-4{
-  flex: 0 0 auto;
-  width: 33.333333%;
-}
-.col-xl-6{
-  flex: 0 0 auto;
-  width: 50%;
-}
-.col-xl-9{
-  flex: 0 0 auto;
-  width: 75%;
-}
-.col-xl-12{
-  flex: 0 0 auto;
-  width: 100%;
-}
+
 .mg-b-1{
   margin-bottom: 2rem!important;
 }
@@ -145,9 +242,6 @@
 
 .w-80{
   width: 8rem;
-}
-.h-90-vh{
-  height: 90vh;
 }
 
 .fs-3{

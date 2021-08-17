@@ -10,11 +10,11 @@ const Week = (props) => {
   };
   return (
     <>
-      <div className="row col-xl-12 mg-b-1">
+      <div className="row mg-b-1">
         {data.daily
           ? data.daily.map((v, i) => (
               <div
-                className={`col-xl-3 pd-1 cur`}
+                className={`col-xl-3 col-lg-3 col-md-3 col-xs-6 col-mn-12 pd-1 cur`}
                 key={i}
                 data-id={i}
                 onClick={selectedHandler}
@@ -43,7 +43,7 @@ const Week = (props) => {
           : ""}
       </div>
       <div className="row">
-        <div className="col-xl-12">
+        <div className="col-xl-12 col-lg-12 col-md-12 col-xs-12 col-mn-12">
           <Card>
             {data.daily ? (
               <div className="row">
